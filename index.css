@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pry--clr: #9356DC;
+    --sec-clr:#FF79DA;
+    --ter-clr:#99E2D0;
+    --font-family: roboto;
+    --box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    --pry-font:'Roboto', sans-serif;
+    --sec-font:'Lobster', cursive;
+    --clr-btn:linear-gradient(DF6EDA , B461DC);
+    --paris_color:#EAEAEA;
+    --footer-clr:#353535;
+--header_backgroundclr:#F6F6F6;
+--menu-list3:#F5EDFF;
+--homepage: linear-gradient(#A35BDC,#D46BDB)
+
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1;
+
+}
+
+a{
+    color: inherit;
+text-decoration: none;}
+header{
+    /* border: 2px solid red; */
+    text-align: center;
+    width: 100vw;
+    max-width: 1120px;
+}
+
+header .header-logo{
+    background: inherit;
+    box-shadow: --box-shadow;
+    height: 5rem;
+    /* border: 2px solid red; */
+    position: relative;
+    /* margin-top: 0; */
+}
+
+
+
+header img{
+    height: 2rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.paris{
+    padding-block: 2rem;
+    font-size: 1.5rem;
+    background: var(--pry--clr);
+    background: rgba(121, 115, 115, 0.107);
+    height: 5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.paris p{
+    display:inline-block;
+    margin-left: .1rem;
+}
+
+.header-info{
+    background: rgba(240, 251, 255, 0.324);
+    padding: 0rem 1rem ;
+}
+
+
+.header-title{
+    padding: 2rem .785rem;
+}
+
+.header-info p{
+    font-size: 24px;
+}
+
+.btn{
+    padding: .9rem , 1.7rem;
+    border: 0;
+    display: inline-block;
+    height: 3rem;
+    width: 13rem;
+    margin-block: 2rem;
+    border-radius: 50px;
+    background:var(--homepage);
+        /* font-size: .5rem; */
+    color: white;
+    font-size: .923rem;
+
+}
+
+/* menus================ */
+
+ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+ul{
+    /* background: var(--ter-clr); */
+    /* margin-left: .1rem; */
+    padding-block: 1rem;
+}
+
+ul:hover{
+    background: var(--menu-list3);
+}
+
+
+
+.menus-title{
+    padding: 2rem .7rem ;
+    font-size: 2rem;
+}
+
+.menus-items{
+    margin: 1rem 0;
+    height: 5rem;
+    padding-block: 1.5rem;
+    font-size: 20px;
+    width: 20rem;
+    background: rgba(102, 213, 223, 0.32);
+    font-size: 1.2rem;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.326);
+    max-width: 90vw;
+    margin-block: 1.8rem;
+    margin-inline: auto;
+
+    
+    }
+
+    .menus-items:hover{
+        background: rgba(145, 137, 91, 0.607);
+    }
+
+.menus-logo{
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+.menus-logo:hover{
+    color:var(--sec-clr);
+}
+.menus-number{
+    background: purple;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    font-size: 1.2rem;
+    left: -10px;
+    top: -3px;
+    color: white;
+}
+
+.menus-text{
+    margin-left: 1.5rem;
+    font-size: .85rem;
+    /* border: 2px solid red; */
+    font-weight: bold;
+}
+
+
+
+
+/* restaurant card */
+
+section img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.dishes{
+    /* padding: 1.5rem 1.7rem; */
+    background:var(--header_backgroundclr);
+    text-transform: capitalize;
+}
+
+.dishes-card:hover{
+    transform: scale(85%);
+    box-shadow: 5px 5px 20px 20px rgba(99, 82, 82, 0.207);
+    transition: transform linear 450ms , box-shadow ease-in-out 500ms ;
+}
+
+.dishes-card{
+    width: 90vw;
+    /* border: 2px solid red;     */
+    background: white;
+    border-radius: 25px;
+    position: relative;
+    height: 15rem;
+    margin-bottom: 1rem;
+    box-shadow: 8px 8px 17px rgb(160, 141, 141), -8px -8px 17px rgba(180, 173, 173, 0.438);
+
+}
+
+.new{
+    /* font-style: italic; */
+    padding:0 0 .5rem .9rem;
+    font-size: 1rem;
+}
+
+.dishes-title{
+    display: inline-block;
+    font-weight: bold;
+    padding:1.5rem 0;
+    font-size: 1.4rem;
+}
+
+.card-1{
+    margin: 1rem auto;
+    /* border: 2px solid ; */
+    margin: 1rem auto;
+    width: 90vw;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+}
+
+
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid brown; */
+    font-size: .787rem;
+    padding:.7rem .8rem 0 .8rem ;
+}
+
+.tag{
+    background: var(--ter-clr);
+    position: absolute;
+    top: 5%;
+    left: 65%;
+    /* border: 3px solid orange; */
+    width:100px;
+    box-shadow: 3px 5px 3px rgba(95, 188, 201, 0.829);
+    padding: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+
+.love{
+    font-size: 24px;
+    color: rgb(128, 37, 37);
+}
+
+i:hover{
+    color: var(--sec-clr);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    padding: 1.2rem 1.5rem;
+    background:var(--footer-clr);
+    color: white;
+    padding-bottom: 2.5rem;
+}
+
+footer h1{
+    font-family:var(--sec-font);
+    font-weight: 700;
+    /* letter-spacing: 5px; */
+    font-size: 1.5rem;
+    margin-bottom: .6rem;
+}
+
+.icon-1{
+    padding-right:.3rem;
+}
+
+.footer-logo , .footer{
+    padding-top: .5rem;
+}
+.footer-1{
+    padding-block: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+/* Tablet view============== */
+
+@media screen and (min-width:768px){
+    p{
+        font-size:1rem;
+    }
+    .paris p , .paris span{
+        position: relative;
+        top:-10px
+    }
+
+    .paris span{
+        font-size: 2rem;
+    }
+    .header-title{
+        font-size: 2.7rem;
+    }
+
+    .btn{
+        width: 23rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        line-height: 20px;
+        }
+    /* --menus--- */
+    header{
+        /* border: 2px solid green; */
+        max-width: 1120px;
+        margin: 0 auto;
+        /* height: 7rem; */
+    }
+
+    .header-logo{
+        padding: 0;
+        position: inherit;
+        /* border: 2px solid purple; */
+        width: 100%;
+
+    }
+
+    .header-img {
+        width: 500px;
+        height: 80px;
+        padding: 0;
+        /* border: 2px solid blue; */
+        left: 50%;
+        top: 0;
+    }
+    /* menus */
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* dishees card */
+    .dishes-card{
+        width: 45vw;
+        margin: 1rem;
+
+    }
+
+
+    .menus-text{
+        font-size: 1rem;    }
+
+    .menus-flex-1 p, .menus-flex-2 p{
+        font-size: 1.3rem;
+    }
+
+    .menus-flex-1 h1, .menus-flex-2 h1{
+        font-size: 1.8rem;
+    }
+   
+    .menus-flex-1 , .menus-flex-2{
+        display: flex;
+        /* padding: 1rem; */
+    }
+
+    
+}
+/* -------------desktop view------------- */
+
+@media screen and (min-width:1024px){
+    header{
+        width:90vw;
+        /* border:2px solid blue; */
+        margin: 0 auto;
+    }
+
+    main{
+        width: 90vw;
+        margin: 0 auto;
+        /* border: 2px solid green; */
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    section{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    footer{
+        width: 90vw;
+        margin: 0 auto;
+    }
+ .grand-flex{
+    display: flex;
+ }
+ .card-1{
+    margin: 0;
+    /* margin-left: 1.5rem; */
+    width: 98vw;
+ }
+
+ .dishes-card{
+    width: 19vw;
+ }
+
+ .dishes-card h1{
+    font-size: 1.2rem;
+ }
+
+ .tag{
+    left: 40%;
+ }
+}

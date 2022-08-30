@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FWS -->
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .a{
+            border: 2px solid green;
+            display: flex;
+            width: 80vw;
+            font-size: .6rem;
+            height: 70px;
+            border-radius: 15px;
+            margin: 2rem auto;
+            max-width: 1120px;
+            padding-left: .7rem;
+
+        }
+
+        .a p{
+            font-size: .8rem;
+            padding-top: .4rem;
+        }
+
+        .entrees-card{
+            flex-grow: 1;
+            margin-block: .7rem;
+        }
+
+        .display{
+            width: 50px;
+            text-align: center;
+            background: lightgreen;
+            height: 100%;
+            display: flex;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .display i{
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50px;
+            padding-top: .5rem;
+            margin: auto;
+        }
+
+        .card-info{
+            display: flex;
+            width: 62vw;
+        }
+        .entrees-text{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .card-amount{
+            display: flex;
+        }
+
+        @media screen and (min-width:768px){
+            .a{
+                width: 30rem;
+                height: 7rem;
+                font-size: 1rem;
+                padding-left: .5rem;
+            }
+
+            .a p{
+                font-size: 1.4rem;
+                padding-block: .5rem;
+            }
+
+            .card-info{
+                width: 25rem;
+            }
+            
+        }
+
+        @media screen and (min-width:1024px){
+            .a{
+                width: 40rem;
+                height: 10rem;
+                font-size: 1.6rem;
+                padding-left: 1rem;
+            }
+
+            .a p{
+                font-size: 2.4rem;
+                padding-block: .5rem;
+            }
+
+            .card-info{
+                width: 30rem;
+            }
+            .display{
+                width: 7.5rem;
+                
+            }
+
+            .display i{
+                width: 70px;
+                height: 70px;
+                padding-top: .9rem;
+                font-size: 2.9rem;
+            }
+        }
+        [welcome]{
+            background: red;
+        }
+            </style>
+</head>
+<body> <div class="card-flex a">
+    <div class="entrees-card">
+        <h1>ox tail shepard's pie</h1>
+        <!-- card contents -->
+    <div class="card-info">
+    <p class="entrees-text">with black truffle and puredd parsnips salam Lorem ipsum dolor, sit amet consectetur adipisicing.
+        
+    </p>
+    <p class="card-amount">35
+        <span class="euro"><i class="fa-solid fa-euro-sign"></i></span>
+    </p>
+    </div>
+
+</div>
+<div class="over-lay">
+    <p class="display"><i class="fa-solid fa-check"></i></p>
+</div>
+</div>
+
+    <div class="welcome"><h3>salam</h3></div>
+    </body>
+</html>
+
+
+
+
+
+<!-- 
+.Large-box{
+  display: flex;
+  align-items: center;
+  border: 2px solid red;
+  height: 200px;
+  width: 50vw;
+  background: purple;
+}
+
+.Inner-white-box {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipses;
+ transition: all 0.2s ease-in-out;
+}
+
+.Inner-small-box {
+ display: flex;
+ align-items: center;
+  justify-content: center;
+ width: 0;
+ background-color: cyan;
+ overflow: hidden;
+ transition: width 0.2s ease-in-out;
+}
+
+.inner-small-box svg {
+ fill: white;
+ transition: transform 0.2s ease-in;
+ width: 150px;
+ }
+
+.large-box:hover .inner-small-box{
+  width: 60px;
+}
+
+.large-box:hover .inner-small-box svg{
+ transform: rotate(360deg);
+ transform-origin: center;
+}
+
+
+
+
+   
+ -->

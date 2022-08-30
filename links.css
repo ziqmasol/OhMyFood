@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* variables */
+:root{
+    --pry--clr: #9356DC;
+    --sec-clr:#FF79DA;
+    --ter-clr:#99E2D0;
+    --box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    --pry-font:'Roboto', sans-serif;
+    --border-hack: 2px solid red;
+    --sec-font:'Lobster', cursive;
+    --pry-BG-clr:#F6F6F6;
+    --order__btn:linear-gradient(#EB73DA,#AB5EDB);
+    --footer-clr:#353535;
+}
+
+/* HEADER==========HEADER===STARTS */
+/* body{
+    overflow: hidden;
+} */
+
+header img{
+    width:12rem;
+    text-align: center;
+}
+
+a{
+    color: black;
+
+}
+
+
+header i{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    padding: .8rem;
+    transition: padding 450ms linear;
+}
+
+header i:hover{
+    padding: .5rem;
+    transition: padding 450ms linear;
+}
+
+header .img-par{
+    /* border: 2px solid green; */
+    flex-grow: 1;
+    text-align: center;
+    padding-top: .6rem;
+}
+
+header{
+    max-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER==========HEADER===ends */
+
+/* ====hero starts==== */
+.hero{
+    /* border: 2px solid purple; */
+    width: 100vw;
+}
+
+.hero img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content{
+    width: 100%;
+    background: var(--pry-BG-clr);
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+    padding: 1rem 1.3rem;
+    text-transform: capitalize;
+    /* border: 2px solid red; */
+    border-radius: 45px 45px 0 0;
+}
+
+.title-text{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.hero-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entress-underline{
+    height: 3px;
+    width: 50px;
+    background: rgb(30, 228, 235);
+}
+
+
+.entrees-title{
+    margin: 1rem 0 .5rem 0;
+    padding-bottom: .253rem;
+}
+
+.entrees-title h1{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+
+
+/* card=============cards===========cards */
+/* 
+a 
+over-lay and entrees-card
+over-lay= display , display and display i
+entrees-card= entrees h1 and card-info,amount
+
+*/
+
+.a{
+    /* border: 2px solid green; */
+    display: flex;
+    width: 80vw;
+    font-size: .6rem;
+    /* height: 70px; */
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 1120px;
+    padding-left: .7rem;
+    background: white;
+    box-shadow: 5px 5px 12px rgba(141, 126, 126, 0.3) ,-5px -5px 12px rgba(141, 126, 126, 0.3);
+    animation: fade-in 100ms 1 forwards;
+    opacity: 0;
+    }
+/* fade-in -animation */
+
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity:4;
+        
+    }
+    50%{
+        opacity: 7;
+    }
+
+    75%{
+        opacity: 10;
+    }
+
+    100%{
+        opacity: 10;
+        transform: translateY(10%);
+
+    }
+}
+
+
+.a p{
+    font-size: .8rem;
+    padding-top: .4rem;
+}
+
+.entrees-card{
+    margin-block: .7rem;
+    width: 100%;
+}
+.display{
+    width: 50px;
+    text-align: center;
+    background: lightgreen;
+    height: 100%;
+    display: flex;
+    border-radius: 0 15px 15px 0;
+    display: none;
+}
+
+
+.display i{
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50px;
+    padding-top: .6rem;
+    margin-top: .5rem;
+    
+}
+.a:hover .display{
+    display: block;
+}
+
+
+
+.a:hover .display i{
+    animation: salamibrahimadigun 200ms;
+
+}
+
+.card-info{
+    display: flex;
+    }
+.entrees-text{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+    width: 55vw;
+    flex-grow: 1;
+}
+.card-amount{
+    display: flex;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+
+
+button{
+    text-align: center;
+    border: none;
+    display: inline-block;
+    margin: 3rem auto;
+    padding: 1rem 4.5rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    border-radius: 20px;
+    background: var(--order__btn);
+    color: white;
+    font-weight: 500;
+    
+}
+
+
+
+/* ========KEY ANIMATION STARTS==== */
+@keyframes salamibrahimadigun{
+    0%{
+        transform: rotate(0deg);
+    }
+
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    
+    }
+
+    75%{
+        transform:rotate(270deg);
+        /* width: 200px; */
+    }
+    100%{
+        transform: rotate(359deg);
+    }
+
+}
+
+
+@keyframes translatefromlefttoright{
+    0%{
+        transform: translateX(10px , 0);
+    }
+
+    50%{
+        transform:translateX(10px)
+    }
+
+    100%{
+        /* transform: translateX(50px); */
+        width: 100%;
+    }
+}
+
+/* ========key animation ENDS======= */
+
+
+/* footer starts */
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    padding: 1.2rem 1.5rem;
+    background:var(--footer-clr);
+    color: white;
+    padding-bottom: 2.5rem;
+    width: 100vw;
+}
+
+footer h1{
+    font-family:var(--sec-font);
+    font-weight: 700;
+    /* letter-spacing: 5px; */
+    font-size: 1.5rem;
+    margin-bottom: .6rem;
+}
+
+.icon-1{
+    padding-right:.3rem;
+}
+
+.footer-logo , .footer{
+    padding-top: .5rem;
+}
+.footer-1{
+    padding-block: 1rem 0;
+}
+
+/* footer ends */
+
+/* overlay => display => ib */
+
+
+
+/* reponsive */
+
+@media screen and (min-width:768px){
+    .hero img{
+        height: 25rem;
+    }
+    .hero-content{
+        margin-top: -40px;
+    }
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-2{
+    margin-top: 0;
+}
+
+    .entrees-title h1{
+        font-size: 2rem;
+    }
+    .a{
+        width: 25rem;
+        height: 5rem;
+        /* font-size: 1rem; */
+        padding-left: .5rem;
+    }
+
+    .entrees-card{
+        font-size: .8rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+
+    .a p{
+        font-size: .8rem;
+        padding-block: .5rem;
+    }
+
+    
+}
+
+@media screen and (min-width:1024px){
+    .entress-underline{
+        height: 5px;
+        width: 100px;
+    }
+
+    .a{
+        width: 30rem;
+        height: 7rem;
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .a p{
+        font-size: 1.4rem;
+        padding-block: .5rem;
+    }
+
+    .display{
+        width: 7.5rem;
+        
+    }
+
+    .display i{
+        width: 70px;
+        height: 70px;
+        padding-top: .9rem;
+        font-size: 2.9rem;
+    }
+
+    .entrees-text{
+        height: 40px;
+
+    }
+
+}
+
+/* button */
+
+.btn{
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
+
