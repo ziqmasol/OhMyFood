@@ -381,10 +381,11 @@ main{
     }
 
     .a{
-        width: 30rem;
+        width: 25rem;
         height: 7rem;
         font-size: 1rem;
         padding-left: 1rem;
+        padding-bottom:0;
     }
 
     .a p{
@@ -409,6 +410,12 @@ main{
 
     }
 
+button{
+    /* height: 5rem; */
+    padding: 1rem 2rem;
+    width: 15rem;
+    font-size: 2rem;
+}
 }
 
 /* button */

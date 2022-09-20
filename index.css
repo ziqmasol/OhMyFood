@@ -24,7 +24,6 @@
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1;
-
 }
 
 a{
@@ -41,9 +40,7 @@ header .header-logo{
     background: inherit;
     box-shadow: --box-shadow;
     height: 5rem;
-    /* border: 2px solid red; */
     position: relative;
-    /* margin-top: 0; */
 }
 
 
@@ -362,12 +359,15 @@ footer h1{
         flex-wrap: wrap;
     }
 
+    section,footer{
+        max-width:1120px;
+    }
+
     /* dishees card */
     .dishes-card{
-        width: 45vw;
+        width: 20rem;
         margin: 1rem;
-
-    }
+}
 
 
     .menus-text{
@@ -392,13 +392,13 @@ footer h1{
 
 @media screen and (min-width:1024px){
     header{
-        width:90vw;
-        /* border:2px solid blue; */
+        width:100vw;
         margin: 0 auto;
     }
 
+
     main{
-        width: 90vw;
+        width: 100vw;
         margin: 0 auto;
         /* border: 2px solid green; */
         max-width: 1120px;
@@ -406,12 +406,12 @@ footer h1{
     }
 
     section{
-        width: 90vw;
+        width: 100vw;
         margin: 0 auto;
     }
 
     footer{
-        width: 90vw;
+        width: 100vw;
         margin: 0 auto;
     }
  .grand-flex{
@@ -419,12 +419,11 @@ footer h1{
  }
  .card-1{
     margin: 0;
-    /* margin-left: 1.5rem; */
-    width: 98vw;
+    width: 80vw;
  }
 
  .dishes-card{
-    width: 19vw;
+    width: 15rem;
  }
 
  .dishes-card h1{
